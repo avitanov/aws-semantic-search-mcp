@@ -1,0 +1,51 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PullContainerImage",
+      "Effect": "Allow",
+      "Action": [
+        "ecr:BatchGetImage",
+        "ecr:GetDownloadUrlForLayer",
+        "ecr:BatchCheckLayerAvailability"
+      ],
+      "Resource": "arn:aws:ecr:${AWS_REGION}:${ACCOUNT}:repository/${ECR_REPO}"
+    },
+    {
+      "Sid": "EcrAuth",
+      "Effect": "Allow",
+      "Action": "ecr:GetAuthorizationToken",
+      "Resource": "*"
+    },
+    {
+      "Sid": "ManageRuntimeLogGroup",
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:DescribeLogStreams"
+      ],
+      "Resource": "arn:aws:logs:${AWS_REGION}:${ACCOUNT}:log-group:/aws/bedrock-agentcore/runtimes/${RUNTIME_NAME}-*"
+    },
+    {
+      "Sid": "WriteRuntimeLogs",
+      "Effect": "Allow",
+      "Action": ["logs:CreateLogStream", "logs:PutLogEvents"],
+      "Resource": "arn:aws:logs:${AWS_REGION}:${ACCOUNT}:log-group:/aws/bedrock-agentcore/runtimes/${RUNTIME_NAME}-*:log-stream:*"
+    },
+    {
+      "Sid": "InvokeFoundationModels",
+      "Effect": "Allow",
+      "Action": "bedrock:InvokeModel",
+      "Resource": "arn:aws:bedrock:${AWS_REGION}::foundation-model/*"
+    },
+    {
+      "Sid": "QueryVectorIndex",
+      "Effect": "Allow",
+      "Action": [
+        "s3vectors:QueryVectors",
+        "s3vectors:GetVectors"
+      ],
+      "Resource": "arn:aws:s3vectors:${AWS_REGION}:${ACCOUNT}:bucket/${VECTOR_BUCKET}/index/${VECTOR_INDEX}"
+    }
+  ]
+}

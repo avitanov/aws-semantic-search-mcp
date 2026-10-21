@@ -1,0 +1,11 @@
+[project]
+name = "aws-semantic-search-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "boto3==1.43.78",
+    "fastmcp==3.4.7",
+    "pypdf==6.16.2",
+]

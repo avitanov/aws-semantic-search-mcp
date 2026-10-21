@@ -1,0 +1,62 @@
+[
+  {
+    "file": "01_attention_is_all_you_need.pdf",
+    "title": "Attention Is All You Need",
+    "url": "https://arxiv.org/abs/1706.03762",
+    "download_url": "https://arxiv.org/pdf/1706.03762"
+  },
+  {
+    "file": "02_resnet_deep_residual_learning.pdf",
+    "title": "Deep Residual Learning for Image Recognition",
+    "url": "https://arxiv.org/abs/1512.03385",
+    "download_url": "https://arxiv.org/pdf/1512.03385"
+  },
+  {
+    "file": "03_bert.pdf",
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "url": "https://arxiv.org/abs/1810.04805",
+    "download_url": "https://arxiv.org/pdf/1810.04805"
+  },
+  {
+    "file": "04_generative_adversarial_networks.pdf",
+    "title": "Generative Adversarial Nets",
+    "url": "https://arxiv.org/abs/1406.2661",
+    "download_url": "https://arxiv.org/pdf/1406.2661"
+  },
+  {
+    "file": "05_adam_optimizer.pdf",
+    "title": "Adam: A Method for Stochastic Optimization",
+    "url": "https://arxiv.org/abs/1412.6980",
+    "download_url": "https://arxiv.org/pdf/1412.6980"
+  },
+  {
+    "file": "06_xgboost.pdf",
+    "title": "XGBoost: A Scalable Tree Boosting System",
+    "url": "https://arxiv.org/abs/1603.02754",
+    "download_url": "https://arxiv.org/pdf/1603.02754"
+  },
+  {
+    "file": "07_dropout.pdf",
+    "title": "Dropout: A Simple Way to Prevent Neural Networks from Overfitting",
+    "url": "https://jmlr.org/papers/v15/srivastava14a.html",
+    "download_url": "https://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf"
+  },
+  {
+    "file": "08_batch_normalization.pdf",
+    "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+    "url": "https://arxiv.org/abs/1502.03167",
+    "download_url": "https://arxiv.org/pdf/1502.03167"
+  },
+  {
+    "file": "09_word2vec.pdf",
+    "title": "Efficient Estimation of Word Representations in Vector Space",
+    "url": "https://arxiv.org/abs/1301.3781",
+    "download_url": "https://arxiv.org/pdf/1301.3781"
+  },
+  {
+    "file": "10_dqn_playing_atari.pdf",
+    "title": "Playing Atari with Deep Reinforcement Learning",
+    "url": "https://arxiv.org/abs/1312.5602",
+    "download_url": "https://arxiv.org/pdf/1312.5602"
+  }
+]
